@@ -2,7 +2,7 @@
 
 This repository demonstrates how to use OpenTelemetry to collect and export telemetry data to [Azure Application Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview) (part of Azure Monitor). It includes two methods for exporting telemetry data:
 - **directly** from the application using the [Azure Monitor OpenTelemetry SDK](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-enable?tabs=python)
-- **collector** - via a local [OpenTelemetry Collector](https://opentelemetry.io/docs/collector/) with the [Azure Monitor Exporter](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/exporter/azuremonitorexporter) configured.
+- **collector** - via a local [OpenTelemetry Collector](https://opentelemetry.io/docs/collector/) with the [Azure Monitor Exporter](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/exporter/azuremonitorexporter) configured, running in a Docker container.
   - *NOTE*: this method is [not officially supported by Microsoft](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-help-support-feedback?tabs=python#can-i-use-the-opentelemetry-collector)
 
 ## Prerequisites
