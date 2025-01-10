@@ -37,41 +37,33 @@ This repository demonstrates how to use OpenTelemetry to collect and export tele
 1. Configure the environment based on the example file:
     ```sh
     cd direct
-    ```
-
-2. Configure the environment based on the example file:
-    ```sh
     cp .env.example .env
     ```
 
-3. Edit the file.
+2. Edit `.env`:
     - You can get your `APPLICATION_INSIGHTS_CONNECTION_STRING` [from the Azure Portal](https://learn.microsoft.com/en-us/azure/azure-monitor/app/connection-strings).
     - Put in whatever `API_ENDPOINT` you want the app to call.
 
-4. Run the client: `python client_direct.py`
+3. Run the client: `python client_direct.py`
 
 ## Running the Collector-based Demo
 
 1. Configure the environment based on the example file:
     ```sh
     cd collector
-    ```
-
-2. Configure the environment based on the example file:
-    ```sh
     cp .env.example .env
     ```
 
-3. Edit the file with whatever `API_ENDPOINT` you want the app to call.
+2. Edit `.env` with whatever `API_ENDPOINT` you want the app to call.
 
-4. Edit the `otel-config.yaml` and update connection_string with your App Insights Connection String [from the Azure Portal](https://learn.microsoft.com/en-us/azure/azure-monitor/app/connection-strings).
+3. Edit `otel-config.yaml` and update connection_string with your App Insights Connection String [from the Azure Portal](https://learn.microsoft.com/en-us/azure/azure-monitor/app/connection-strings).
 
-5. Start the OpenTelemetry Collector using Docker Compose:
+4. Start the OpenTelemetry Collector using Docker Compose:
     ```sh
     docker-compose up
     ```
 
-6. In a new terminal, run the [client_collector.py](http://_vscodecontentref_/11) script:
+5. In a new terminal, run the [client_collector.py](http://_vscodecontentref_/11) script:
     ```sh
     source .venv/bin/activate  # In Powershell use `.venv\Scripts\Activate.ps1`
     cd collector
