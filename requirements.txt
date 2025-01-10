@@ -1,0 +1,4 @@
+azure-monitor-opentelemetry==1.6.4
+python-dotenv==1.0.1
+opentelemetry-instrumentation-logging
+opentelemetry-exporter-otlp
