@@ -1,4 +1,4 @@
-# OpenTelemetry Observability Demo
+# OpenTelemetry with Azure AppInsights Demo
 
 This repository demonstrates how to use OpenTelemetry to collect and export telemetry data to [Azure Application Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview) (part of Azure Monitor). It includes two methods for exporting telemetry data:
 - **directly** from the application using the [Azure Monitor OpenTelemetry SDK](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-enable?tabs=python)
@@ -56,7 +56,7 @@ This repository demonstrates how to use OpenTelemetry to collect and export tele
 
 2. Edit `.env` with whatever `API_ENDPOINT` you want the app to call.
 
-3. Edit `otel-config.yaml` and update connection_string with your App Insights Connection String [from the Azure Portal](https://learn.microsoft.com/en-us/azure/azure-monitor/app/connection-strings).
+3. Edit `otel-config.yaml` and update `connection_string` with your App Insights Connection String [from the Azure Portal](https://learn.microsoft.com/en-us/azure/azure-monitor/app/connection-strings).
 
 4. Start the OpenTelemetry Collector using Docker Compose:
     ```sh
