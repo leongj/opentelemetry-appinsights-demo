@@ -1,3 +1,6 @@
+# This program uses the OpenTelemetry libraries to export trace to a locally-running OpenTelemetry Collector.
+# It repeatedly calls an API (defined in .env) and prints the response.
+
 from dotenv import load_dotenv
 import os
 import requests
